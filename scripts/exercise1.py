@@ -1,9 +1,13 @@
-locations = {'North America': {'USA': ['Mountain View']}}
 
 
 class Locations(object):
     def __init__(self):
-        locations = {}
+        self.locations = {}
 
-    def add_location(self, city, country, continent):
-        pass
+    def add_new(self, city, country, continent):
+        self.locations[continent] = {country: [city]}
+
+
+test = Locations()
+test.add_new('Mountaun View', 'USA', 'North America')
+print(test.locations)
