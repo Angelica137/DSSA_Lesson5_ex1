@@ -22,12 +22,3 @@ class Locations(object):
                 for city in cities:
                     print("{}".format(city))
             count += 1
-
-
-test = Locations()
-test.add_new('Mountaun View', 'USA', 'North America')
-test.add_new('Atlanta', 'USA', 'North America')
-test.add_new('Bangalore', 'India', 'Asia')
-test.add_new('New Dehli', 'India', 'Asia')
-print(test.locations)
-test.print_cities()
