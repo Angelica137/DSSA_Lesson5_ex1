@@ -7,6 +7,8 @@ class Locations(object):
             countries = self.locations[continent]
             if country in countries.keys():
                 countries[country].append(city)
+            else:
+                countries[country] = [city]
         else:
             self.locations[continent] = {country: [city]}
 
