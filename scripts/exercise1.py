@@ -12,6 +12,9 @@ class Locations(object):
         else:
             self.locations[continent] = {country: [city]}
 
+    def print_cities():
+        pass
+
 
 test = Locations()
 test.add_new('Mountaun View', 'USA', 'North America')
