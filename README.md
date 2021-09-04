@@ -2,6 +2,12 @@
 
 ## Task 1
 
+You are given this variable
+
+```
+locations = {'North America': {'USA': ['Mountain View']}}
+```
+
 Add the cities below by modifying the given structure
 
 ```
