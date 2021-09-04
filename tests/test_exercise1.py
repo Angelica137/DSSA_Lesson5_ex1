@@ -10,6 +10,7 @@ def test_add_location_returns_default():
 
 def test_add_location_add_city_to_country():
     l = Locations()
+    l.add_new('Mountain View', 'USA', 'North America')
     l.add_new('Atlanta', 'USA', 'North America')
     assert l.locations == {'North America': {
         'USA': ['Mountain View', 'Atlanta']}}

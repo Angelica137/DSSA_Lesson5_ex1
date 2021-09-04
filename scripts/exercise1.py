@@ -3,9 +3,15 @@ class Locations(object):
         self.locations = {}
 
     def add_new(self, city, country, continent):
-        self.locations[continent] = {country: [city]}
+        if continent in self.locations.keys():
+            countries = self.locations[continent]
+            if country in countries.keys():
+                countries[country].append(city)
+        else:
+            self.locations[continent] = {country: [city]}
 
 
 test = Locations()
 test.add_new('Mountaun View', 'USA', 'North America')
+test.add_new('Atlanta', 'USA', 'North America')
 print(test.locations)
