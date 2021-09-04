@@ -18,7 +18,7 @@ class Locations(object):
             print(count)
             countries = self.locations[continent]
             for country in countries:
-                cities = countries[country]
+                cities = sorted(countries[country])
                 for city in cities:
                     print("{}".format(city))
             count += 1
